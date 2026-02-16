@@ -8,6 +8,7 @@ So I was determined to keep the same Soft Papery goodness, but to make things no
 This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. 
 
 This is solely for Soft Paper lovers. 
+<img width="1572" height="1061" alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
 
 ## Performance Benchmarks (2026-02-15)
 
