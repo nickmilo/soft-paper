@@ -58,3 +58,14 @@ I won't update often. But here are a few things I might want to develop.
 - Dark mode: The dark mode "works" but is far from optimized.
 - Graph view: It's pretty lame. Honestly, switch themes if you want a cool graph screenshot.
   
+
+
+---
+
+## Credits
+
+Based on [AnuPpuccin](https://github.com/AnubisNekhet/AnuPpuccin) by Anubis. If you enjoy this theme, consider [supporting the original author](https://www.buymeacoffee.com/anubisnekhet).
+
+## License
+
+[GPL-3.0](LICENSE)
