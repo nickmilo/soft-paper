@@ -26,7 +26,7 @@ This is solely for Soft Paper lovers.
 If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
 
 - **Hide scrollbars**
-- M**ake bases compact**
+- **Make bases compact**
   - Tighter vertical spacing in Bases plugin tables
 - **Make file explorer compact**
   - Tighter vertical spacing in the file explorer
