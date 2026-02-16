@@ -1,11 +1,14 @@
 # Soft Paper
 A custom Obsidian theme to feel more reflective. 
 
-I went ahead and forked this from the AnuPpuccin theme. Thanks to the creator of that theme. But with multiple bases open, it slowed down more than other themes. That slowdown is no good, and more importantly, I made this theme the standard for Ideaverse Pro, so it has gotten in the way of a fast experience for some people. 
+I went ahead and forked this from the AnuPpuccin theme. Thanks to the creator of that theme. But with multiple bases open, it slowed down more than other themes. That slowdown is no good, and more importantly, I made that theme the standard for Ideaverse Pro, so it has gotten in the way of a fast experience for some people. 
 
 So I was determined to keep the same Soft Papery goodness, but to make things noticeably faster. 
 
-This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. This is solely for Soft Paper lovers. 
+This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. 
+
+This is solely for Soft Paper lovers. 
+<img width="1572" height="1061" alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
 
 ## Performance Benchmarks (2026-02-15)
 
@@ -38,7 +41,7 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
 
 ---
 
-I especially like making the bases and file explorer compact. Look at the before and after below. 
+I especially like toggling the options to make the bases and file explorer compact. Look at the before and after below. 
 
 **Before compact toggles are turned on**
 <img width="1571" height="1060" alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
@@ -47,4 +50,11 @@ I especially like making the bases and file explorer compact. Look at the before
 <img width="1570" height="1062" alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
 
 
+---
 
+## Roadmap
+I won't update often. But here are a few things I might want to develop. 
+
+- Dark mode: The dark mode "works" but is far from optimized.
+- Graph view: It's pretty lame. Honestly, switch themes if you want a cool graph screenshot.
+  
