@@ -1,9 +1,11 @@
 # Soft Paper
-A custom Obsidian theme to feel more reflective.
+A custom Obsidian theme to feel more reflective. 
 
-Forked from the AnuPpuccin theme. Thanks to the creator of that theme. 
+I went ahead and forked this from the AnuPpuccin theme. Thanks to the creator of that theme. But with multiple bases open, it slowed down more than other themes. That slowdown is no good, and more importantly, I made this theme the standard for Ideaverse Pro, so it has gotten in the way of a fast experience for some people. 
 
-This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. 
+So I was determined to keep the same Soft Papery goodness, but to make things noticeably faster. 
+
+This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. This is solely for Soft Paper lovers. 
 
 ## Performance Benchmarks (2026-02-15)
 
@@ -17,7 +19,7 @@ This theme reduces the code by 86% and is much, much faster. For example, the CP
 | **Box shadows/filters**    | 31         | 6          | **81% fewer**   |
 
 
-### Style Settings
+## Style Settings
 If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
 
 - **Hide scrollbars**
