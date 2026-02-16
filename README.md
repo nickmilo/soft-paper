@@ -49,4 +49,11 @@ I especially like toggling the options to make the bases and file explorer compa
 <img width="1570" height="1062" alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
 
 
+---
 
+## Roadmap
+I won't update often. But here are a few things I might want to develop. 
+
+- Dark mode: The dark mode "works" but is far from optimized.
+- Graph view: It's pretty lame. Honestly, switch themes if you want a cool graph screenshot.
+  
