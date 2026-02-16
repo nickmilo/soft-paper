@@ -1,4 +1,4 @@
-# soft-paper
+# Soft Paper
 A custom Obsidian theme to feel more reflective.
 
 Forked from the AnuPpuccin theme. Thanks to the creator of that theme. 
@@ -18,7 +18,7 @@ This theme reduces the code by 86% and is much, much faster. For example, the CP
 
 
 ### Style Settings
-I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
+If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
 
 - **Hide scrollbars**
 - M**ake bases compact**
@@ -33,4 +33,16 @@ I have a few style settings for you to toggle. These are settings I toggle, so I
   - Settings window at 90% opacity so you can see changes live
 
 <img width="857" height="596" alt="CleanShot 2026-02-15 at 18 48 07" src="https://github.com/user-attachments/assets/60d7c446-8871-4476-a5e7-ebd6c4b55f2a" />
+
+---
+
+I especially like making the bases and file explorer compact. Look at the before and after below. 
+
+**Before compact toggles are turned on**
+<img width="1571" height="1060" alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
+
+**After compact toggles are turned on**
+<img width="1570" height="1062" alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
+
+
 
