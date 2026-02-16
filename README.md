@@ -1,60 +1,39 @@
 # Soft Paper
-A custom Obsidian theme to feel more reflective. 
 
-I went ahead and forked this from the AnuPpuccin theme. Thanks to the creator of that theme. But with multiple bases open, it slowed down more than other themes. That slowdown is no good, and more importantly, I made that theme the standard for Ideaverse Pro, so it has gotten in the way of a fast experience for some people. 
+An Obsidian theme by Nick Milo.
 
-So I was determined to keep the same Soft Papery goodness, but to make things noticeably faster. 
+**80% less CSS. Zero conditional selectors. Same look.**
 
-This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) All the old options are stripped. 
+Soft Paper strips AnuPpuccin down to only what you use — 69KB instead of 350KB, 223 selectors instead of 1,024. Faster startup, lower memory, no Style Settings dependency.
 
-This is solely for Soft Paper lovers. 
-<img width="1572" height="1061" alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
+## Installation
 
-## Performance Benchmarks (2026-02-15)
-
-| Metric                     | AnuPpuccin | Soft Paper | Reduction       |
-| -------------------------- | ---------- | ---------- | --------------- |
-| **File size**              | 350 KB     | 69 KB      | **80% smaller** |
-| **Lines**                  | 8,519      | 1,416      | **83% fewer**   |
-| **Selectors**              | 1,024      | 223        | **78% fewer**   |
-| **Conditional classes**    | 2,211      | **0**      | **100% gone**   |
-| **Animations/transitions** | 50         | 7          | **88% fewer**   |
-| **Box shadows/filters**    | 31         | 6          | **81% fewer**   |
-
+1. Open Obsidian Settings → Appearance → Themes
+2. Search for "Soft Paper"
+3. Install and activate
 
 ## Style Settings
-If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
 
-- **Hide scrollbars**
-- M**ake bases compact**
-  - Tighter vertical spacing in Bases plugin tables
-- **Make file explorer compact**
-  - Tighter vertical spacing in the file explorer
+Soft Paper includes optional toggles (requires [Style Settings](https://github.com/mgmeyers/obsidian-style-settings) plugin):
+
+- **Hide scrollbars** (default: on)
+- **Make bases compact** — tighter Bases plugin tables
+- **Make file explorer compact** — tighter vertical spacing
 - **Hide "Add property" button**
-  - Remove the "Add property" button below properties
 - **Make status bar blue**
-  - Toggle the lower-right file details bar between blue and beige
-- **Make settings see-through**
-  - Settings window at 90% opacity so you can see changes live
+- **Make settings see-through** — 90% opacity settings window
 
-<img width="857" height="596" alt="CleanShot 2026-02-15 at 18 48 07" src="https://github.com/user-attachments/assets/60d7c446-8871-4476-a5e7-ebd6c4b55f2a" />
+## Performance
 
----
+| Metric | AnuPpuccin | Soft Paper | Reduction |
+|---|---|---|---|
+| File size | 350 KB | 69 KB | 80% smaller |
+| Lines | 8,519 | 1,416 | 83% fewer |
+| Selectors | 1,024 | 223 | 78% fewer |
+| Conditional classes | 2,211 | 0 | 100% gone |
+| Animations | 50 | 6 | 88% fewer |
+| Box shadows/filters | 31 | 6 | 81% fewer |
 
-I especially like toggling the options to make the bases and file explorer compact. Look at the before and after below. 
+## License
 
-**Before compact toggles are turned on**
-<img width="1571" height="1060" alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
-
-**After compact toggles are turned on**
-<img width="1570" height="1062" alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
-
-
----
-
-## Roadmap
-I won't update often. But here are a few things I might want to develop. 
-
-- Dark mode: The dark mode "works" but is far from optimized.
-- Graph view: It's pretty lame. Honestly, switch themes if you want a cool graph screenshot.
-  
+MIT
