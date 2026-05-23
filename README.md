@@ -8,7 +8,7 @@ I was determined to keep my Soft Paper visuals, but to make things noticeably fa
 This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) Any option from the previous theme has been completely removed. 
 
 This is solely for Soft Paper lovers. 
-<img width="1572" height="1061" alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
+<img width="600"  alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
 
 ## Performance Benchmarks (2026-02-15)
 
@@ -39,17 +39,17 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
 - **Rainbow-Colored Folders**
   - Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
 
-<img width="857" height="596" alt="CleanShot 2026-02-15 at 18 48 07" src="https://github.com/user-attachments/assets/60d7c446-8871-4476-a5e7-ebd6c4b55f2a" />
+<img width="600" alt="CleanShot 2026-02-15 at 18 48 07" src="https://github.com/user-attachments/assets/60d7c446-8871-4476-a5e7-ebd6c4b55f2a" />
 
 ---
 
 I especially like toggling the options to make the bases and file explorer compact. Look at the before and after below. 
 
 **Before compact toggles are turned on**
-<img width="1571" height="1060" alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
+<img width="600"  alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
 
 **After compact toggles are turned on**
-<img width="1570" height="1062" alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
+<img width="600"  alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
 
 
 ---
