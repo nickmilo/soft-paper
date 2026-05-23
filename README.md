@@ -11,17 +11,12 @@ This is solely for Soft Paper lovers.
 
 <img width="600"  alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
 
-## Performance Benchmarks (2026-02-15)
+## Rainbow Folders (NEW a/o 2026-05-23)
+Yes my friends, the oft-requested Rainbow Folders are now available under Style Settings. 
 
-| Metric                     | AnuPpuccin | Soft Paper | Reduction       |
-| -------------------------- | ---------- | ---------- | --------------- |
-| **File size**              | 350 KB     | 69 KB      | **80% smaller** |
-| **Lines**                  | 8,519      | 1,416      | **83% fewer**   |
-| **Selectors**              | 1,024      | 223        | **78% fewer**   |
-| **Conditional classes**    | 2,211      | **0**      | **100% gone**   |
-| **Animations/transitions** | 50         | 7          | **88% fewer**   |
-| **Box shadows/filters**    | 31         | 6          | **81% fewer**   |
+<img width="353" alt="soft-paper-rainbow-folders-light" src="https://github.com/user-attachments/assets/1dcffec1-2c67-422c-9c18-f4afed91a4d6" />
 
+<img width="358" alt="soft-paper-rainbow-folders-dark" src="https://github.com/user-attachments/assets/0ce7ea28-eaf6-4494-9de8-330ca1ce9769" />
 
 ## Style Settings
 If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
@@ -54,6 +49,18 @@ I especially like toggling the options to make the bases and file explorer compa
 
 <img width="600"  alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
 
+---
+
+## Performance Benchmarks (2026-02-15)
+
+| Metric                     | AnuPpuccin | Soft Paper | Reduction       |
+| -------------------------- | ---------- | ---------- | --------------- |
+| **File size**              | 350 KB     | 69 KB      | **80% smaller** |
+| **Lines**                  | 8,519      | 1,416      | **83% fewer**   |
+| **Selectors**              | 1,024      | 223        | **78% fewer**   |
+| **Conditional classes**    | 2,211      | **0**      | **100% gone**   |
+| **Animations/transitions** | 50         | 7          | **88% fewer**   |
+| **Box shadows/filters**    | 31         | 6          | **81% fewer**   |
 
 ---
 
