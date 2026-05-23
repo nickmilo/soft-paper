@@ -23,6 +23,8 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
 
 ### The "See More" Section
 
+<img width="600" alt="CleanShot 2026-05-23 at 12 53 12" src="https://github.com/user-attachments/assets/4158c9c5-4c03-44cd-b6ec-e534846bf726" />
+
 - **Condense everything**
   - Enables all condensing settings at once
 - **Make bases condensed**
@@ -39,10 +41,10 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
   - Tighter line spacing and paragraph gaps in the editor (keeps font size unchanged)
 - **Make settings popup condensed**
   - Tighter spacing in the Settings modal sidebar and main content
- 
-<img width="600" alt="CleanShot 2026-05-23 at 12 53 18" src="https://github.com/user-attachments/assets/23080601-d67d-44b7-88b0-5100da810734" />
 
 ### Special Tweaks
+
+<img width="600" alt="CleanShot 2026-05-23 at 12 53 18" src="https://github.com/user-attachments/assets/23080601-d67d-44b7-88b0-5100da810734" />
 
 - **Hide "Add property" button**
   - Remove the "Add property" button below properties
@@ -53,8 +55,6 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
   - Settings window at 90% opacity so you can see changes live
 - **Rainbow-Colored Folders**
   - Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
-
-<img width="600" alt="CleanShot 2026-05-23 at 12 53 12" src="https://github.com/user-attachments/assets/4158c9c5-4c03-44cd-b6ec-e534846bf726" />
 
 ---
 
