@@ -8,6 +8,7 @@ I was determined to keep my Soft Paper visuals, but to make things noticeably fa
 This theme reduces the code by 86% and is much, much faster. For example, the CPU-expensive tab switching animation is gone. (This alone makes a big difference when you have multiple bases open.) Any option from the previous theme has been completely removed. 
 
 This is solely for Soft Paper lovers. 
+
 <img width="600"  alt="soft-paper-theme" src="https://github.com/user-attachments/assets/fa89e237-79f3-4e54-91f2-8927da899f9b" />
 
 ## Performance Benchmarks (2026-02-15)
@@ -46,9 +47,11 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
 I especially like toggling the options to make the bases and file explorer compact. Look at the before and after below. 
 
 **Before compact toggles are turned on**
+
 <img width="600"  alt="before-compaction" src="https://github.com/user-attachments/assets/1b3a54c1-f908-465b-a2b7-2d0a2dc3b5f6" />
 
 **After compact toggles are turned on**
+
 <img width="600"  alt="after-compaction" src="https://github.com/user-attachments/assets/f3b7e635-e78a-4cb7-a3c5-669bb2adc002" />
 
 
