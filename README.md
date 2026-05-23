@@ -21,13 +21,32 @@ Yes my friends, the oft-requested Rainbow Folders are now available under Style 
 ## Style Settings
 If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
 
-- **Hide scrollbars**
-- **Make bases compact**
+### The "See More" Section
+
+- **Condense everything**
+  - Enables all condensing settings at once
+- **Make bases condensed**
   - Tighter vertical spacing in Bases plugin tables
-- **Make file explorer compact**
+- **Make file explorer condensed**
   - Tighter vertical spacing in the file explorer
+- **Make file explorer extra condensed**
+  - Even tighter spacing (18px rows, matches sidebar panes)
+- **Make sidebar panes condensed**
+  - Tighter vertical spacing in Tags, Properties, Backlinks, Outgoing Links, Outline, Bookmarks, and Search panes
+- **Make in-note properties condensed**
+  - Tighter vertical spacing in the properties/metadata section of notes
+- **Make body text condensed**
+  - Tighter line spacing and paragraph gaps in the editor (keeps font size unchanged)
+- **Make settings popup condensed**
+  - Tighter spacing in the Settings modal sidebar and main content
+ 
+<img width="600" alt="CleanShot 2026-05-23 at 12 53 18" src="https://github.com/user-attachments/assets/23080601-d67d-44b7-88b0-5100da810734" />
+
+### Special Tweaks
+
 - **Hide "Add property" button**
   - Remove the "Add property" button below properties
+- **Hide scrollbars**
 - **Make status bar blue**
   - Toggle the lower-right file details bar between blue and beige
 - **Make settings see-through**
@@ -35,7 +54,7 @@ If you install the 3rd-party plugin "Style Settings," I have a few style setting
 - **Rainbow-Colored Folders**
   - Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
 
-<img width="600" alt="CleanShot 2026-02-15 at 18 48 07" src="https://github.com/user-attachments/assets/60d7c446-8871-4476-a5e7-ebd6c4b55f2a" />
+<img width="600" alt="CleanShot 2026-05-23 at 12 53 12" src="https://github.com/user-attachments/assets/4158c9c5-4c03-44cd-b6ec-e534846bf726" />
 
 ---
 
