@@ -200,7 +200,7 @@ settings:
   --ctp-subtext0: 12, 159, 206;
   --ctp-overlay2: 82, 82, 82;
   --ctp-overlay1: 204, 204, 204;
-  --ctp-overlay0: 12, 159, 206;
+  --ctp-overlay0: rgb(12, 159, 206);
   --ctp-surface2: 202, 193, 185;
   --ctp-surface1: 209, 201, 194;
   --ctp-surface0: 220, 211, 203;
@@ -235,7 +235,7 @@ settings:
   --color-base-25: rgb(var(--ctp-surface0));
   --color-base-30: rgb(var(--ctp-surface1));
   --color-base-35: rgb(var(--ctp-surface2));
-  --color-base-40: rgb(var(--ctp-overlay0));
+  --color-base-40: var(--ctp-overlay0);
   --color-base-50: rgb(var(--ctp-overlay1));
   --color-base-60: rgb(var(--ctp-overlay2));
   --color-base-70: rgb(var(--ctp-subtext0));
@@ -279,7 +279,7 @@ settings:
   --background-modifier-message: rgba(var(--ctp-crust), 0.9);
   --background-modifier-border: rgb(var(--ctp-surface1));
   --background-modifier-border-hover: rgb(var(--ctp-surface2));
-  --background-modifier-border-focus: rgb(var(--ctp-overlay0));
+  --background-modifier-border-focus: var(--ctp-overlay0);
   --background-modifier-cover: #00000022;
   
   /* Text colors */
@@ -347,7 +347,7 @@ settings:
   --ctp-subtext0: 251, 53, 216;
   --ctp-overlay2: 10, 209, 208;
   --ctp-overlay1: 255, 166, 0;
-  --ctp-overlay0: 76, 255, 210;
+  --ctp-overlay0: rgb(76, 255, 210);
   --ctp-surface2: 98, 103, 126;
   --ctp-surface1: 81, 86, 108;
   --ctp-surface0: 65, 69, 89;
@@ -383,7 +383,7 @@ settings:
   --color-base-30: rgb(var(--ctp-surface1));
   --color-base-35: rgb(var(--ctp-surface1));
   --color-base-40: rgb(var(--ctp-surface2));
-  --color-base-50: rgb(var(--ctp-overlay0));
+  --color-base-50: var(--ctp-overlay0);
   --color-base-60: rgb(var(--ctp-overlay1));
   --color-base-70: rgb(var(--ctp-overlay2));
   --color-base-100: rgb(var(--ctp-text));
