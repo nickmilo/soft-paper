@@ -28,7 +28,7 @@ Found and fixed a handful of bugs in the ACE-colored folders, plus some icon con
 - **Depth shading**: subfolders and files now render in a lighter or deeper tint of their parent folder's color, instead of one flat color for the whole tree, so nesting is easier to read at a glance.
 - Fixed a few broken CSS variables that were referenced but never defined, so some styling (code comment color, cancelled-task strikethrough) now actually works.
 
-**New: Extended Folder Palette (8 hues)** — a middle ground between the default 5-hue ACE cycle and the full 11-hue Rainbow toggle. Adds peach, green, and blue to the rotation. Available as its own toggle in Style Settings.
+**New: Extended Folder Palette (8 hues)** - a middle ground between the default 5-hue ACE cycle and the full 11-hue Rainbow toggle. Adds peach, green, and blue to the rotation. Available as its own toggle in Style Settings.
 
 ## Style Settings
 If you install the 3rd-party plugin "Style Settings," I have a few style settings for you to toggle. These are settings I toggle, so I thought you might like them too.
