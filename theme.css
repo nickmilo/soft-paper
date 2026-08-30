@@ -1133,8 +1133,8 @@ body.is-mobile .mod-vertical .workspace-tabs {
 .theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher svg,
 .theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher .clickable-icon,
 .theme-dark .workspace-sidedock-vault-profile svg.svg-icon {
-  color: #414459;
-  --icon-color: #414459;
+  color: rgb(var(--ctp-crust));
+  --icon-color: rgb(var(--ctp-crust));
 }
 
 /* Active sidebar tab highlight */
@@ -1474,6 +1474,16 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
   border-radius: var(--radius-s);
 }
 
+/* Dark mode override: the folder-title/file-title text in dark mode is a dark
+   near-black (--ctp-crust), which needs a LIGHTER background to stay readable —
+   the opposite of light mode's cream text. Darkening files (the rule above) was
+   dropping dark-mode file-row contrast below readable levels. This override
+   lightens files instead, keeping them visibly deeper than the subfolder tier
+   (which lightens by 12%) while staying comfortably readable. */
+.theme-dark .nav-files-container > div > .nav-folder .nav-file-title {
+  background-color: color-mix(in srgb, rgb(var(--rainbow-folder-color)) 76%, white 24%);
+}
+
 /* Full rainbow style */
 .theme-light .nav-files-container > div > .nav-folder .nav-folder-title,
 .theme-light .nav-files-container > div > .nav-folder .nav-file-title {
@@ -1489,11 +1499,11 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 
 .theme-dark .nav-files-container > div > .nav-folder .nav-folder-title,
 .theme-dark .nav-files-container > div > .nav-folder .nav-file-title {
-  color: #414459;
+  color: rgb(var(--ctp-crust));
 }
 .theme-dark .nav-files-container .collapse-icon svg.svg-icon {
-  color: #414459;
-  --icon-color: #414459;
+  color: rgb(var(--ctp-crust));
+  --icon-color: rgb(var(--ctp-crust));
 }
 .theme-dark .tree-item-self .tree-item-icon {
   color: #C6CEEF;
@@ -1507,14 +1517,14 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 
 /* File icons inside rainbow folders - dark mode */
 .theme-dark .nav-files-container .nav-folder .nav-file-title {
-  --icon-color: #414459;
+  --icon-color: rgb(var(--ctp-crust));
 }
 
 .theme-light .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
   color: #EEE6DD;
 }
 .theme-dark .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
-  color: #414459;
+  color: rgb(var(--ctp-crust));
 }
 
 .nav-files-container > div > .nav-folder .nav-folder-children {
