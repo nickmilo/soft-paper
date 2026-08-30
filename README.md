@@ -22,9 +22,9 @@ Yes my friends, the oft-requested Rainbow Folders are now available under Style 
 
 Found and fixed a handful of bugs in the ACE-colored folders, plus some icon contrast issues:
 
-- **Folder color cycling**: the default 5-hue ACE palette was only assigning colors to the first few folders — everything past that just collapsed to gray. Now it correctly cycles through all 5 hues no matter how many folders you have.
+- **Folder color cycling**: the default 5-hue ACE palette was only assigning colors to the first few folders everything past that just collapsed to gray. Now it correctly cycles through all 5 hues no matter how many folders you have.
 - **Icon contrast**: a few icons (folder collapse arrows, top-right pane icons) were colored to match their own background, making them nearly invisible in some spots. Fixed in both light and dark mode.
-- **Dark mode text contrast**: folder/file text and icons were using a color that was never actually meant to be text — turned out to be a background panel color — so contrast was always marginal. Swapped it for the theme's actual high-contrast dark tone.
+- **Dark mode text contrast**: folder/file text and icons were using a color that was never actually meant to be text turned out to be a background panel color so contrast was always marginal. Swapped it for the theme's actual high-contrast dark tone.
 - **Depth shading**: subfolders and files now render in a lighter or deeper tint of their parent folder's color, instead of one flat color for the whole tree, so nesting is easier to read at a glance.
 - Fixed a few broken CSS variables that were referenced but never defined, so some styling (code comment color, cancelled-task strikethrough) now actually works.
 
