@@ -2033,6 +2033,16 @@ body .git-tools .clickable-icon:hover {
   background-color: rgb(var(--ctp-mantle));
 }
 
+/* Graph controls icons (restore / close): keep visible on the light panel,
+   even inside the focused pane where --icon-color-focused is cream */
+.graph-controls .clickable-icon,
+.graph-controls .graph-controls-button {
+  --icon-color: rgb(var(--ctp-subtext1));
+  --icon-color-hover: rgb(var(--ctp-text));
+  --icon-color-active: rgb(var(--ctp-text));
+  --icon-color-focused: rgb(var(--ctp-subtext1));
+}
+
 /* Links - internal: no underline; external: keep underline */
 .markdown-rendered .internal-link,
 .markdown-rendered .internal-link:hover,
