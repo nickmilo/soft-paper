@@ -108,6 +108,12 @@ settings:
     description: Switch from ACE-colored (5 hues) to full 11-color rainbow folders (snippet provided by Joel Anderson)
     type: class-toggle
     default: false
+  -
+    id: sp-folders-extended
+    title: Extended Folder Palette (8 hues)
+    description: A middle ground between the default 5-hue ACE cycle and full Rainbow — adds peach, green, and blue. Turn off Rainbow-Colored Folders if you enable this, since only one palette can be shown at a time.
+    type: class-toggle
+    default: false
 */
 
 /*===============================================================
@@ -600,8 +606,7 @@ body {
   --h6-size: 1.1em;
   --h6-weight: var(--font-semibold);
   --h6-color: #8D8D8D;
-  --bold-weight: var(--font-bold);
-  --code-comment: var(--color-orange-text);
+  --code-comment: var(--color-orange);
   --anp-header-font: "Source Serif Pro", serif;
   --anp-rainbow-folder-bg-opacity: 0.9;
   --anp-rainbow-folder-border-opacity: 1;
@@ -615,7 +620,7 @@ body {
   --card-background-color: rgba(var(--ctp-accent), 1);
   --tab-inactive-color: rgb(var(--ctp-mantle));
   --code-normal: var(--text-normal);
-  --background-modifier-active: hsla(var(--color-accent-hsl), 0.1);
+  --background-modifier-active: rgba(var(--ctp-accent), 0.1);
   --pdf-background: var(--background-primary);
   --pdf-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 8px transparent;
   --pdf-sidebar-background: var(--background-primary);
@@ -1080,7 +1085,6 @@ body.is-mobile .mod-vertical .workspace-tabs {
 .theme-light .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .theme-light .titlebar-button-container .titlebar-button,
 .theme-light .titlebar-button-container .clickable-icon,
-.theme-light .mod-top-right-space .clickable-icon,
 .theme-light .workspace-sidedock-vault-profile .clickable-icon,
 .theme-light .mod-root .workspace-tab-header-tab-list .clickable-icon,
 .theme-light .mod-root .workspace-tab-header-new-tab .clickable-icon {
@@ -1088,6 +1092,14 @@ body.is-mobile .mod-vertical .workspace-tabs {
   --icon-color-hover: var(--sp-cream-light);
   --icon-color-focused: var(--sp-cream-light);
   color: var(--sp-cream-light);
+}
+
+/* Top-right pane icons (view actions, e.g. Bases toolbar) sit on the plain paper
+   background, not the blue accent bar — cream-on-cream made them nearly invisible */
+.theme-light .mod-top-right-space .clickable-icon {
+  --icon-color: var(--text-muted);
+  --icon-color-hover: rgb(var(--ctp-text));
+  color: var(--text-muted);
 }
 
 .theme-dark .mod-left-split .workspace-tab-header-container .clickable-icon,
@@ -1100,7 +1112,6 @@ body.is-mobile .mod-vertical .workspace-tabs {
 .theme-dark .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .theme-dark .titlebar-button-container .titlebar-button,
 .theme-dark .titlebar-button-container .clickable-icon,
-.theme-dark .mod-top-right-space .clickable-icon,
 .theme-dark .workspace-sidedock-vault-profile .clickable-icon,
 .theme-dark .mod-root .workspace-tab-header-tab-list .clickable-icon,
 .theme-dark .mod-root .workspace-tab-header-new-tab .clickable-icon {
@@ -1110,12 +1121,20 @@ body.is-mobile .mod-vertical .workspace-tabs {
   color: var(--sp-surface-gray);
 }
 
+/* Top-right pane icons sit on the plain paper background, not the teal accent bar —
+   surface-matching color made them nearly invisible there too */
+.theme-dark .mod-top-right-space .clickable-icon {
+  --icon-color: var(--text-muted);
+  --icon-color-hover: rgb(var(--ctp-text));
+  color: var(--text-muted);
+}
+
 /* Vault profile chevron: dark on accent background */
 .theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher svg,
 .theme-dark .workspace-sidedock-vault-profile .workspace-drawer-vault-switcher .clickable-icon,
 .theme-dark .workspace-sidedock-vault-profile svg.svg-icon {
-  color: #414459;
-  --icon-color: #414459;
+  color: rgb(var(--ctp-crust));
+  --icon-color: rgb(var(--ctp-crust));
 }
 
 /* Active sidebar tab highlight */
@@ -1373,46 +1392,66 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
  * RAINBOW FOLDERS
  *===============================================================*/
 
-/* Rainbow folder color sequence */
-.nav-folder-children > .nav-folder:nth-child(11n + 2),
-.nav-files-container > div > .nav-folder:nth-child(11n + 2),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 2) { --rainbow-folder-color: var(--ctp-red); }
+/* Rainbow folder color sequence — cycles through the 5 ACE hues every 5 folders */
+.nav-folder-children > .nav-folder:nth-child(5n + 2),
+.nav-files-container > div > .nav-folder:nth-child(5n + 2),
+[data-type="bookmarks"] .tree-item:nth-child(5n + 2) { --rainbow-folder-color: var(--ctp-red); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 3),
-.nav-files-container > div > .nav-folder:nth-child(11n + 3),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 3) { --rainbow-folder-color: var(--ctp-lavender); }
+.nav-folder-children > .nav-folder:nth-child(5n + 3),
+.nav-files-container > div > .nav-folder:nth-child(5n + 3),
+[data-type="bookmarks"] .tree-item:nth-child(5n + 3) { --rainbow-folder-color: var(--ctp-lavender); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 4),
-.nav-files-container > div > .nav-folder:nth-child(11n + 4),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 4) { --rainbow-folder-color: var(--ctp-yellow); }
+.nav-folder-children > .nav-folder:nth-child(5n + 4),
+.nav-files-container > div > .nav-folder:nth-child(5n + 4),
+[data-type="bookmarks"] .tree-item:nth-child(5n + 4) { --rainbow-folder-color: var(--ctp-yellow); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 5),
-.nav-files-container > div > .nav-folder:nth-child(11n + 5),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 5) { --rainbow-folder-color: var(--ctp-teal); }
+.nav-folder-children > .nav-folder:nth-child(5n + 5),
+.nav-files-container > div > .nav-folder:nth-child(5n + 5),
+[data-type="bookmarks"] .tree-item:nth-child(5n + 5) { --rainbow-folder-color: var(--ctp-teal); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 6),
-.nav-files-container > div > .nav-folder:nth-child(11n + 6),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 6) { --rainbow-folder-color: var(--ctp-mauve); }
+.nav-folder-children > .nav-folder:nth-child(5n + 6),
+.nav-files-container > div > .nav-folder:nth-child(5n + 6),
+[data-type="bookmarks"] .tree-item:nth-child(5n + 6) { --rainbow-folder-color: var(--ctp-mauve); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 7),
-.nav-files-container > div > .nav-folder:nth-child(11n + 7),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 7) { --rainbow-folder-color: var(--ctp-mauve); }
+/*---------------------------------------------------------------
+ * EXTENDED FOLDER PALETTE (Style Settings toggle: sp-folders-extended)
+ * A middle ground between the default 5-hue ACE cycle and the full
+ * 11-hue Rainbow toggle below — 8 hues, cycling every 8 folders.
+ * Higher-specificity selectors (extra .sp-folders-extended class) mean
+ * these simply override the default 5-hue rules above when enabled;
+ * the default rules are untouched and still apply when this is off.
+ *---------------------------------------------------------------*/
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 2),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 2),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 2) { --rainbow-folder-color: var(--ctp-red); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 8),
-.nav-files-container > div > .nav-folder:nth-child(11n + 8),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 8) { --rainbow-folder-color: var(--ctp-mauve); }
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 3),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 3),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 3) { --rainbow-folder-color: var(--ctp-peach); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 9),
-.nav-files-container > div > .nav-folder:nth-child(11n + 9),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 9) { --rainbow-folder-color: var(--ctp-mauve); }
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 4),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 4),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 4) { --rainbow-folder-color: var(--ctp-yellow); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 10),
-.nav-files-container > div > .nav-folder:nth-child(11n + 10),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 10) { --rainbow-folder-color: var(--ctp-mauve); }
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 5),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 5),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 5) { --rainbow-folder-color: var(--ctp-green); }
 
-.nav-folder-children > .nav-folder:nth-child(11n + 11),
-.nav-files-container > div > .nav-folder:nth-child(11n + 11),
-[data-type="bookmarks"] .tree-item:nth-child(11n + 11) { --rainbow-folder-color: var(--ctp-mauve); }
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 6),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 6),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 6) { --rainbow-folder-color: var(--ctp-teal); }
+
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 7),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 7),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 7) { --rainbow-folder-color: var(--ctp-blue); }
+
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 8),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 8),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 8) { --rainbow-folder-color: var(--ctp-mauve); }
+
+.sp-folders-extended .nav-folder-children > .nav-folder:nth-child(8n + 9),
+.sp-folders-extended .nav-files-container > div > .nav-folder:nth-child(8n + 9),
+.sp-folders-extended [data-type="bookmarks"] .tree-item:nth-child(8n + 9) { --rainbow-folder-color: var(--ctp-lavender); }
 
 /* Subfolders inherit parent color */
 .nav-files-container .nav-folder.nav-folder .nav-folder,
@@ -1420,13 +1459,38 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
   --rainbow-folder-color: inherit;
 }
 
+/* Depth shading — subfolders get a lighter tint, files get a slightly deeper tint,
+   of the SAME hue as their ancestor folder, so nesting reads as a shade gradient
+   rather than one flat color block. Anchored off the same top-level folder prefix
+   used elsewhere in this file, so it can only match items truly nested inside a
+   colored folder — never the top-level folder itself. Falls back gracefully (no
+   shading, same as before) in any browser without color-mix() support. */
+.nav-files-container > div > .nav-folder .nav-folder {
+  background-color: color-mix(in srgb, rgb(var(--rainbow-folder-color)) 88%, white 12%);
+}
+
+.nav-files-container > div > .nav-folder .nav-file-title {
+  background-color: color-mix(in srgb, rgb(var(--rainbow-folder-color)) 88%, black 12%);
+  border-radius: var(--radius-s);
+}
+
+/* Dark mode override: the folder-title/file-title text in dark mode is a dark
+   near-black (--ctp-crust), which needs a LIGHTER background to stay readable —
+   the opposite of light mode's cream text. Darkening files (the rule above) was
+   dropping dark-mode file-row contrast below readable levels. This override
+   lightens files instead, keeping them visibly deeper than the subfolder tier
+   (which lightens by 12%) while staying comfortably readable. */
+.theme-dark .nav-files-container > div > .nav-folder .nav-file-title {
+  background-color: color-mix(in srgb, rgb(var(--rainbow-folder-color)) 76%, white 24%);
+}
+
 /* Full rainbow style */
 .theme-light .nav-files-container > div > .nav-folder .nav-folder-title,
 .theme-light .nav-files-container > div > .nav-folder .nav-file-title {
   color: #EEE6DD;
 }
-.theme-light .nav-files-container .collapse-icon svg.svg-icon {
-  color: var(--background-primary);
+.theme-light .nav-files-container > div > .nav-folder .collapse-icon svg.svg-icon {
+  color: #EEE6DD;
 }
 .theme-light .tree-item-self .tree-item-icon {
   color: #525252;
@@ -1435,11 +1499,11 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 
 .theme-dark .nav-files-container > div > .nav-folder .nav-folder-title,
 .theme-dark .nav-files-container > div > .nav-folder .nav-file-title {
-  color: #414459;
+  color: rgb(var(--ctp-crust));
 }
 .theme-dark .nav-files-container .collapse-icon svg.svg-icon {
-  color: #414459;
-  --icon-color: #414459;
+  color: rgb(var(--ctp-crust));
+  --icon-color: rgb(var(--ctp-crust));
 }
 .theme-dark .tree-item-self .tree-item-icon {
   color: #C6CEEF;
@@ -1447,20 +1511,20 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 }
 
 /* File icons inside rainbow folders - light mode */
-.theme-light .nav-files-container .nav-folder .nav-file-title {
-  --icon-color: var(--background-primary);
+.theme-light .nav-files-container > div > .nav-folder .nav-file-title {
+  --icon-color: #EEE6DD;
 }
 
 /* File icons inside rainbow folders - dark mode */
 .theme-dark .nav-files-container .nav-folder .nav-file-title {
-  --icon-color: #414459;
+  --icon-color: rgb(var(--ctp-crust));
 }
 
 .theme-light .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
   color: #EEE6DD;
 }
 .theme-dark .nav-files-container > div > .nav-folder-children > .nav-file .nav-file-title {
-  color: #414459;
+  color: rgb(var(--ctp-crust));
 }
 
 .nav-files-container > div > .nav-folder .nav-folder-children {
@@ -1642,6 +1706,13 @@ body.sp-rainbow-folders.theme-dark .nav-files-container .nav-file-title.is-activ
 /*===============================================================
  * CUSTOM CHECKBOXES
  *===============================================================*/
+
+/* Cancelled tasks ([data-task="-"]): struck-through, muted text.
+   These two variables were previously referenced but never defined. */
+:root {
+  --checklist-done-decoration: line-through;
+  --checklist-done-color: var(--text-muted);
+}
 
 [data-task=x] > input[type=checkbox]:checked,
 [data-task=x] > p > input[type=checkbox]:checked, [data-task=x][type=checkbox]:checked {
