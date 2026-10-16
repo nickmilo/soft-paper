@@ -1369,6 +1369,13 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 .callout[data-callout=quote], .callout[data-callout=cite] { --callout-color: var(--ctp-surface2); }
 .callout[data-callout=note] { --callout-color: var(--ctp-accent); }
 
+/* responsive multi-column */
+.callout[data-callout="multi-column"] > .callout-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
 /*===============================================================
  * RAINBOW FOLDERS
  *===============================================================*/
