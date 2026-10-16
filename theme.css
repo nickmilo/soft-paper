@@ -154,18 +154,53 @@ settings:
 }
 
 /* Default scrollbar: thin and transparent */
-*::-webkit-scrollbar {
+:is(
+  .nav-files-container,
+  .workspace-leaf-content,
+  .markdown-source-view,
+  .markdown-preview-view,
+  .modal-container,
+  .menu,
+  .suggestion-container
+)::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
-*::-webkit-scrollbar-track {
+
+:is(
+  .nav-files-container,
+  .workspace-leaf-content,
+  .markdown-source-view,
+  .markdown-preview-view,
+  .modal-container,
+  .menu,
+  .suggestion-container
+)::-webkit-scrollbar-track {
   background: transparent;
 }
-*::-webkit-scrollbar-thumb {
+
+:is(
+  .nav-files-container,
+  .workspace-leaf-content,
+  .markdown-source-view,
+  .markdown-preview-view,
+  .modal-container,
+  .menu,
+  .suggestion-container
+)::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-*::-webkit-scrollbar-thumb:hover {
+
+:is(
+  .nav-files-container,
+  .workspace-leaf-content,
+  .markdown-source-view,
+  .markdown-preview-view,
+  .modal-container,
+  .menu,
+  .suggestion-container
+)::-webkit-scrollbar-thumb:hover {
   background: rgba(0, 0, 0, 0.25);
 }
 
@@ -514,12 +549,6 @@ settings:
   color: inherit;
 }
 
-/* File explorer hover effects */
-.theme-dark:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-folder-title:hover,
-.theme-dark:not(.is-grabbing) .nav-files-container > div .nav-file .nav-file-title:hover {
-  filter: brightness(0.85);
-}
-
 /* Dark mode: sidebar pane text (tags, backlinks, etc.) */
 .theme-dark .tree-item-inner-text {
   color: #C6CEEF;
@@ -575,12 +604,12 @@ body {
  *===============================================================*/
 
 body {
-  --h1-font: "Source Serif Pro", serif;
-  --h2-font: "Source Serif Pro", serif;
-  --h3-font: "Source Serif Pro", serif;
-  --h4-font: "Source Serif Pro", serif;
-  --h5-font: "Source Serif Pro", serif;
-  --h6-font: "Source Serif Pro", serif;
+  --h1-font: "Noto Serif", Georgia, serif;
+  --h2-font: "Noto Serif", Georgia, serif;
+  --h3-font: "Noto Serif", Georgia, serif;
+  --h4-font: "Noto Serif", Georgia, serif;
+  --h5-font: "Noto Serif", Georgia, serif;
+  --h6-font: "Noto Serif", Georgia, serif;
   --h1-size: 1.75em;
   --h1-weight: var(--font-black);
   --h1-line-height: 1.2;
@@ -602,7 +631,7 @@ body {
   --h6-color: #8D8D8D;
   --bold-weight: var(--font-bold);
   --code-comment: var(--color-orange-text);
-  --anp-header-font: "Source Serif Pro", serif;
+  --anp-header-font: "Noto Serif", Georgia, serif;
   --anp-rainbow-folder-bg-opacity: 0.9;
   --anp-rainbow-folder-border-opacity: 1;
   --anp-rainbow-folder-collapse-border-custom: #00000044;
@@ -1472,7 +1501,6 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 }
 
 .nav-files-container > div > .nav-folder {
-  transition: background-color 0.4s;
   background-color: rgba(var(--rainbow-folder-color), var(--anp-rainbow-folder-bg-opacity));
   margin-bottom: 2px;
   border-radius: 5px;
@@ -1482,10 +1510,6 @@ body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav
 body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file .nav-file-title:hover {
   background-color: rgba(var(--ctp-base), 0.1);
   color: var(--background-primary);
-}
-
-body.theme-light:not(.is-grabbing) .nav-files-container > div > .nav-file .nav-file-title:hover {
-  filter: brightness(0.9);
 }
 
 body:not(.is-grabbing) .nav-files-container > div > .nav-folder .nav-file-title.is-active {
