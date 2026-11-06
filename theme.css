@@ -2628,11 +2628,14 @@ body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-p
   min-width: 0;
 }
 /* The hover/editing highlight reaches 5px past the text on the left and
-   2px above and below, so values don't sit on its edge. Negative margins
+   4px above and below, so values don't sit on its edge. Negative margins
    cancel the padding, so nothing moves. */
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property {
+  overflow: visible;
+}
 body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value {
-  margin: -2px 0 -2px -5px;
-  padding: 2px 0 2px 5px;
+  margin: -4px 0 -4px -5px;
+  padding: 4px 0 4px 5px;
   border-radius: 5px;
 }
 body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-select-pill ~ .multi-select-input:focus {
