@@ -2623,11 +2623,17 @@ body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-sele
 body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-select-container {
   --sp-pill-gap: 8px;
 }
-body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-select-pill ~ .multi-select-input {
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value .multi-select-pill ~ .multi-select-input {
   flex: 1 1 0;
   min-width: 0;
-  margin-left: calc(-1 * var(--sp-pill-gap));
-  padding-left: var(--sp-pill-gap);
+}
+/* The hover/editing highlight reaches 5px past the text on the left and
+   2px above and below, so values don't sit on its edge. Negative margins
+   cancel the padding, so nothing moves. */
+body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .metadata-property-value {
+  margin: -2px 0 -2px -5px;
+  padding: 2px 0 2px 5px;
+  border-radius: 5px;
 }
 body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-select-pill ~ .multi-select-input:focus {
   min-width: 6ch;
@@ -2640,7 +2646,7 @@ body:is(.sp-compact-properties, .sp-compact-all) .metadata-container .multi-sele
   flex: none;
   align-self: flex-start;
   margin: 0;
-  padding: 0 0 0 3px;
+  padding: 0 0 0 4px;
   --icon-size: calc(var(--sp-prop-value-size) * 0.8);
   --icon-stroke: 2px;
   color: var(--pill-color-remove);
