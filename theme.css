@@ -1344,25 +1344,11 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
  * CALLOUTS
  *===============================================================*/
 
-/* Callout color that accepts both formats: a full color (Obsidian 1.13+,
-   e.g. rgb(26, 125, 164) or #1a7da4) and the older bare "r, g, b" numbers
-   many callout snippets still use. Both readings are typed as colors, so
-   the one that doesn't parse becomes transparent. Mixing the two and
-   doubling the alpha gives back whichever one is real. */
-@property --sp-callout-full {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: transparent;
-}
-@property --sp-callout-rgb {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: transparent;
-}
+/* Callout color: Obsidian 1.13+ expects --callout-color to be a full color
+   (rgb(26, 125, 164) or #1a7da4). Snippets that still use bare "r, g, b"
+   numbers need updating to rgb(r, g, b). */
 .callout {
-  --sp-callout-full: var(--callout-color);
-  --sp-callout-rgb: rgb(var(--callout-color));
-  --sp-callout: rgb(from color-mix(in srgb, var(--sp-callout-full), var(--sp-callout-rgb)) r g b / calc(alpha * 2));
+  --sp-callout: var(--callout-color);
   border-color: color-mix(in oklch, var(--sp-callout) calc(var(--callout-border-opacity) * 100%), transparent);
 }
 .callout > .callout-title {
