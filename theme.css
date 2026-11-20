@@ -1120,7 +1120,7 @@ body.theme-dark.theme-dark .is-focused .mod-right-split .mod-active .workspace-t
 .theme-light .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .theme-light .titlebar-button-container .titlebar-button,
 .theme-light .titlebar-button-container .clickable-icon,
-.theme-light .mod-top-right-space .clickable-icon,
+.theme-light .mod-top-right-space .workspace-tab-header-container .clickable-icon,
 .theme-light .workspace-sidedock-vault-profile .clickable-icon,
 .theme-light .mod-root .workspace-tab-header-tab-list .clickable-icon,
 .theme-light .mod-root .workspace-tab-header-new-tab .clickable-icon {
@@ -1140,7 +1140,7 @@ body.theme-dark.theme-dark .is-focused .mod-right-split .mod-active .workspace-t
 .theme-dark .is-focused .mod-right-split .mod-active .workspace-tab-header.is-active .workspace-tab-header-inner-title,
 .theme-dark .titlebar-button-container .titlebar-button,
 .theme-dark .titlebar-button-container .clickable-icon,
-.theme-dark .mod-top-right-space .clickable-icon,
+.theme-dark .mod-top-right-space .workspace-tab-header-container .clickable-icon,
 .theme-dark .workspace-sidedock-vault-profile .clickable-icon,
 .theme-dark .mod-root .workspace-tab-header-tab-list .clickable-icon,
 .theme-dark .mod-root .workspace-tab-header-new-tab .clickable-icon {
@@ -1302,7 +1302,7 @@ body.theme-dark:not(.is-mobile) .workspace-split.mod-left-split .workspace-sided
 }
 
 /* Dark mode twin: keeps back/forward and view-header icons visible.
-   Without it, the .mod-top-right-space rule paints them surface gray. */
+   Kept as a safeguard alongside the tab-bar icon rule above. */
 .theme-dark .view-header .clickable-icon,
 .theme-dark .view-header-nav-buttons .clickable-icon {
   --icon-color: rgb(var(--ctp-subtext1));
